@@ -1,0 +1,28 @@
+<%= render :partial => 'spree/shared/error_messages', :locals => { :target => @spree_notification } %>
+<div class="field">
+  <%= f.fields_for :notification do %>
+    <div class='label-div'><%= f.label :notification %></div>
+    <div class='input-div'>
+      <%= f.text_area :notification, :rows => "4", :cols => "20" %>
+    </div>
+  <% end %>
+</div>
+<div class="field">
+  <%= f.fields_for :start_date do %>
+    <div class='label-div'><%= f.label :start_date %></div>
+    <div class='input-div'>
+      <%= f.text_field :start_date, :id => "start_date"%>
+    </div>
+  <% end %>
+</div>
+<div class="field">
+  <%= f.fields_for :end_date do %>
+    <div class='label-div'><%= f.label :end_date %></div>
+    <div class='input-div'>
+      <%= f.text_field :end_date, :id => "end_date"%>
+    </div>
+  <% end %>
+</div>
+<div class="field">
+  <%= f.submit :id => "notification_btn" %>
+</div>

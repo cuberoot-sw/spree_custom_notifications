@@ -1,0 +1,27 @@
+<h3> Notifications </h3>
+<div class='page-actions table-cell.toolbar'>
+  <%= link_to "Add Notification", "/admin/notifications/new", :class => "button icon-plus create_btn", :id => "notification_add_btn"%>
+</div>
+<table class='index' id = 'index_table'>
+  <thead>
+    <tr>
+      <th> Message </th>
+      <th> Start Date </th>
+      <th> End Date </th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @notifications.each do |notification| %>
+      <tr>
+        <td><%= notification.notification %></td>
+        <td><%= notification.start_date.to_date %></td>
+        <td><%= notification.end_date.to_date %></td>
+        <td><%= link_to "Edit", edit_admin_notification_path(notification), :class => "icon_link with-tip icon-edit no-text"%></td>
+        <td><%= link_to "Delete", "/admin/notifications/#{notification.id}", method: :delete, data: { confirm: 'Are you sure?' }, :class => "delete-resource icon_link with-tip icon-trash no-text"%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= paginate @notifications %>

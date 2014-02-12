@@ -1,0 +1,13 @@
+/*
+ *= require admin/spree_backend
+*/
+
+.create_btn{
+  float: right;
+}
+#index_table {
+    margin-top: 62px;
+}
+#notification-content-header{
+   padding-bottom: 25px;
+}

@@ -1,0 +1,14 @@
+<div id='notification-content-header'>
+  <h4>Add Notification</h4>
+</div>
+<div class='container'>
+  <div class="row">
+    <div id="content" data-hook="">
+      <div class="twelve columns">
+       <%= form_for @spree_notification , :url => "/admin/notifications", :html => {:method => :post} do |f| %>
+         <%= render partial: 'form', :locals => {f: f}%>
+       <% end %>
+      </div>
+    </div>
+  </div>
+<div/>

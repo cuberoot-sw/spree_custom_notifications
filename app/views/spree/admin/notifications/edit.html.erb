@@ -1,0 +1,17 @@
+<div id='notification-content-header'>
+  <h4>Edit Notification</h4>
+  <div class='page-actions table-cell.toolbar'>
+    <%= link_to "Add Notification", "/admin/notifications/new", :class => "button icon-plus create_btn", :id => "notification_add_btn"%>
+  </div>
+</div>
+<div class='container'>
+  <div class="row">
+    <div id="content" data-hook="">
+      <div class="twelve columns">
+        <%= form_for @spree_notification , :url => "/admin/notifications/#{@spree_notification.id}", :html => {:method => :put} do |f| %>
+          <%= render partial: 'form', :locals => {f: f}%>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<div/>
