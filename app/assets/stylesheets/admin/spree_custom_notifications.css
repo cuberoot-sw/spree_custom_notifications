@@ -11,3 +11,6 @@
 #notification-content-header{
    padding-bottom: 25px;
 }
+#admin-menu ul{
+  table-layout: none !important;
+}
