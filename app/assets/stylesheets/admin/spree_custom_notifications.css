@@ -4,6 +4,8 @@
 
 .create_btn{
   float: right;
+  margin-right: 40px;
+  position: relative;
 }
 #index_table {
     margin-top: 62px;
@@ -11,6 +13,6 @@
 #notification-content-header{
    padding-bottom: 25px;
 }
-#admin-menu ul{
-  table-layout: none !important;
+.input-width{
+  width: 50%
 }
