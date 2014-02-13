@@ -1,3 +1,23 @@
 /*
  *= require store/spree_frontend
 */
+
+#notification_div{
+  background-color: #9FC820;
+  font-size: larger;
+  height: auto;
+  padding: 10px;
+  color: #ffffff;
+}
+
+#notification_div li{
+  list-style: none outside none;
+}
+
+#close_img{
+  float: right;
+  margin-left: -3px;
+  margin-right: -5px;
+  margin-top: -12px;
+  width: 26px;
+}
