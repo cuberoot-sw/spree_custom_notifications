@@ -1,7 +1,13 @@
-SpreeCustomNotifications
+Spree Custom Notifications
 ========================
 
-Introduction goes here.
+This gem is used to display custom notifications added by spree admin on
+Spree Store's Home page.
+
+If the notifications are disclosed by user, they are not displayed again during same session.
+
+The Notification is displayed during its start date and end date added
+by admin while creating it.
 
 Installation
 ------------
@@ -19,22 +25,5 @@ bundle
 bundle exec rails g spree_custom_notifications:install
 ```
 
-Testing
--------
 
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
-
-```shell
-bundle
-bundle exec rake test_app
-bundle exec rspec spec
-```
-
-When testing your applications integration with this extension you may use it's factories.
-Simply add this require statement to your spec_helper:
-
-```ruby
-require 'spree_custom_notifications/factories'
-```
-
-Copyright (c) 2014 [name of extension creator], released under the New BSD License
+Copyright (c) 2014 [Cuberoot Software](http://www.cuberoot.in), released under the New BSD License

@@ -4,12 +4,11 @@ Gem::Specification.new do |s|
   s.name        = 'spree_custom_notifications'
   s.version     = '0.1'
   s.summary     = 'Spree Store Custom Notifications'
-  s.description = 'Add (optional) gem description here'
+  s.description = 'Display Custom notifications on Spree Store'
   s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'prachidhabu'
   s.email     = 'prachi@cuberoot.in'
-  # s.homepage  = 'http://www.spreecommerce.com'
 
   s.files       = `git ls-files`.split("\n")
   s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
