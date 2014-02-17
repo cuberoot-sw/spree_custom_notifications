@@ -20,12 +20,14 @@ module Spree
         redirect_to admin_notifications_path,
                     notice: 'Notification has been created Succefully.'
       else
+        _date_time_string(@spree_notification)
         render :new
       end
     end
 
     def edit
       @spree_notification = Spree::Notification.find(params[:id])
+      _date_time_string(@spree_notification)
     end
 
     def update
@@ -36,18 +38,29 @@ module Spree
         redirect_to admin_notifications_path,
                     notice: 'Notification has been updated Successfully'
       else
+        _date_time_string(@spree_notification)
         render :edit
       end
     end
 
     def _set_notification(params)
       @notification = {}
-      @start_date = Time.zone.parse(params[:notification][:start_date])
-      @end_date = Time.zone.parse(params[:notification][:end_date])
+      @start_date = params[:notification][:start_date]
+      @start_date = Time.zone.parse(params[:notification][:start_date]).getutc unless @start_date.blank?
+
+      @end_date = params[:notification][:end_date]
+      @end_date = Time.zone.parse(params[:notification][:end_date]).getutc unless @end_date.blank?
       @message = params[:notification][:notification]
       @notification = { notification: @message,
                         start_date: @start_date,
                         end_date: @end_date }
+    end
+
+    def _date_time_string(notification)
+      notification.start_date =
+        notification.start_date.strftime('%Y-%m-%d %H:%M') if notification.start_date?
+      notification.end_date =
+        notification.end_date.strftime('%Y-%m-%d %H:%M') if notification.end_date?
     end
 
     private

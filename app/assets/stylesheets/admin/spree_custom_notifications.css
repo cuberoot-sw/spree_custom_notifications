@@ -16,3 +16,8 @@
 .input-width{
   width: 50%
 }
+
+/* time picker css*/
+.ui-timepicker-div{
+  padding-left: 10px;
+}

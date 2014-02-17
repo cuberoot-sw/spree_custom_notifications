@@ -1,12 +1,24 @@
 //= require admin/spree_backend
+//= require admin/jquery-timer
 
 $(document).ready(function(){
-  // show datepicker
+  // show datetimepicker
   $("#start_date").focusin(function () {
-     $(this).datepicker({ altField: "#"+$(this).attr('id'),altFormat: "yy-mm-dd"});
+    var currentTime = new Date(),
+    currrnt_hours = currentTime.getHours(),
+    current_minutes = currentTime.getMinutes();
+     $(this).datetimepicker({ dateFormat: "yy-mm-dd",
+                              hour: currrnt_hours,
+                              minute: current_minutes});
   });
 
   $("#end_date").focusin(function () {
-     $(this).datepicker({ altField: "#"+$(this).attr('id'),altFormat: "yy-mm-dd"});
+     var currentTime = new Date(),
+     currrnt_hours = currentTime.getHours(),
+     current_minutes = currentTime.getMinutes();
+     $(this).datetimepicker({ dateFormat: "yy-mm-dd",
+                              hour: currrnt_hours,
+                              minute: current_minutes});
+
   });
 });
