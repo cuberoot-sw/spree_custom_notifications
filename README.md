@@ -32,7 +32,27 @@ bundle
 bundle exec rails g spree_custom_notifications:install
 ```
 
-![admin-custom-notification](screen-shots/custom_notification_screen_admin.png)
+Example
+-------
+Please refer following screenshot to create custom notifications.
 
+Admin can add sample notification.
+```
+
+![admin-custom-notification](screen-shots/custom_notification_screen_admin.png)
+```
+
+On store, the Notifications are displayed as following:
+```
+![store-custom-notification](screen-shots/custom_notification_screen_store.png)
+```
+
+Customization
+-------------
+
+You can customize the styling of notification by using spree
+assets customization logic.
+Refer -
+[http://guides.spreecommerce.com/developer/asset.html](http://guides.spreecommerce.com/developer/asset.html)
 
 Copyright (c) 2014 [Cuberoot Software](http://www.cuberoot.in), released under the New BSD License
