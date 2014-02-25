@@ -1,8 +1,7 @@
 Spree Custom Notifications
 ========================
 
-This gem is used to display custom notifications added by spree admin on
-Spree Store's Home page.
+This gem is used to display custom notifications on Spree Store's Home page.
 
 1. Spree Admin -
 
