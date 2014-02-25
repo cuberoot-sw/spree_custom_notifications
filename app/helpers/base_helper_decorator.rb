@@ -5,7 +5,7 @@ Spree::BaseHelper.class_eval do
     session['show_notification'] = true if session['show_notification'].nil?
     if session['show_notification']
       session['show_notification'] = true
-      current_time = Time.zone.now.getutc
+      current_time = Time.now.getutc
       notifications =
         Spree::Notification.where('start_date <= :start_date_cond AND
                                   end_date >= :end_date_cond',

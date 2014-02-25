@@ -9,7 +9,7 @@
 </div>
 <div class="field">
   <%= f.fields_for :start_date do %>
-    <div class='label-div'><%= f.label :start_date %></div>
+    <div class='label-div'><%= f.label :start_date , 'Start Date ( should be in UTC )'%></div>
     <div class='input-div'>
       <%= f.text_field :start_date, :id => "start_date", :class => 'input-width'%>
     </div>
@@ -17,7 +17,7 @@
 </div>
 <div class="field">
   <%= f.fields_for :end_date do %>
-    <div class='label-div'><%= f.label :end_date %></div>
+    <div class='label-div'><%= f.label :end_date, 'End Date ( should be in UTC )' %></div>
     <div class='input-div'>
       <%= f.text_field :end_date, :id => "end_date", :class => 'input-width'%>
     </div>

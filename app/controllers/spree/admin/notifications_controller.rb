@@ -46,10 +46,8 @@ module Spree
     def _set_notification(params)
       @notification = {}
       @start_date = params[:notification][:start_date]
-      @start_date = Time.zone.parse(params[:notification][:start_date]).getutc unless @start_date.blank?
 
       @end_date = params[:notification][:end_date]
-      @end_date = Time.zone.parse(params[:notification][:end_date]).getutc unless @end_date.blank?
       @message = params[:notification][:notification]
       @notification = { notification: @message,
                         start_date: @start_date,

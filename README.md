@@ -33,5 +33,7 @@ bundle
 bundle exec rails g spree_custom_notifications:install
 ```
 
+![admin-custom-notification](screen-shots/custom_notification_screen_admin.png)
+
 
 Copyright (c) 2014 [Cuberoot Software](http://www.cuberoot.in), released under the New BSD License
