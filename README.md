@@ -49,6 +49,7 @@ Customization
 
 You can customize the styling of notification by using spree
 assets customization logic.
+
 Refer -
 [http://guides.spreecommerce.com/developer/asset.html](http://guides.spreecommerce.com/developer/asset.html)
 
