@@ -37,15 +37,12 @@ Example
 Please refer following screenshot to create custom notifications.
 
 Admin can add sample notification.
-```
 
 ![admin-custom-notification](screen-shots/custom_notification_screen_admin.png)
-```
 
 On store, the Notifications are displayed as following:
-```
+
 ![store-custom-notification](screen-shots/custom_notification_screen_store.png)
-```
 
 Customization
 -------------
