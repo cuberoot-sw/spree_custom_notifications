@@ -7,7 +7,7 @@ This gem is used to display custom notifications on Spree Store's Home page.
 
   Notification link is added in `Configuration Menu`.
 
-  Admin is able to CURD on Notification.
+  Admin is able to CRUD on Notification.
 
 2. Spree Store -
 
@@ -50,6 +50,26 @@ Customization
 You can customize the styling of notification by using spree
 assets customization logic.
 
+Example: If you want to change background-color of notifications:
+
+Add in `app/assets/stylesheets/store/custom.css`
+```ruby
+#notification_div{
+  background-color: gray;
+}
+```
+
+Then, require custom.css in your `app/assets/stylesheets/store/all.css`.
+
+```ruby
+/*
+ *= require store/spree_frontend
+
+ *= require store/spree_custom_notifications
+ *= require_self
+ *= require_tree .
+*/
+```
 Refer -
 [http://guides.spreecommerce.com/developer/asset.html](http://guides.spreecommerce.com/developer/asset.html)
 
