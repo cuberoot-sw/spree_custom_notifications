@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_custom_notifications'
-  s.version     = '0.3'
+  s.version     = '0.4'
   s.summary     = 'Spree Store Custom Notifications'
   s.description = 'Display Custom notifications on Spree Store'
   s.required_ruby_version = '>= 1.9.3'
