@@ -53,7 +53,7 @@ assets customization logic.
 Example: If you want to change background-color of notifications:
 
 Add in `app/assets/stylesheets/store/custom.css`
-```ruby
+```css
 #notification_div{
   background-color: gray;
 }
@@ -61,7 +61,7 @@ Add in `app/assets/stylesheets/store/custom.css`
 
 Then, require custom.css in your `app/assets/stylesheets/store/all.css`.
 
-```ruby
+```css
 /*
  *= require store/spree_frontend
 
